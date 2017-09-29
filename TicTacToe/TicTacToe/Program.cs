@@ -9,14 +9,19 @@ namespace TicTacToe
     class Program
     {
         static void Main(string[] args)
-        {
+        { 
             board board = new board();
 
-            board.title();
-            board.createBoard();
-
-            Console.WriteLine("\nPlayer blah turn");
+            board.begin();
+            // to prevent screen closing. 
+            // REMOVE ONLY when game is complete
             Console.ReadLine();
+
+
         }
+            
+
     }
-}
+}       
+
+
